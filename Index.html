@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eLEARNING</title>
+
+    <!-- FONT AWESOME v6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER / NAV ================= -->
+    <section class="header" id="home">
+        <nav>
+            <a href="index.html">
+                <img src="Images/logo.png" alt="Logo">
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#course">COURSE</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making websites is now one of the easiest things in the world.</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+
+    <!-- ================= COURSE ================= -->
+    <section class="course" id="course">
+        <h1>Courses We Offer</h1>
+        <p>We offer beautiful and standard courses for all levels.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Learn key concepts to kickstart your journey.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>A full degree program designed for you.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Post Graduate</h3>
+                <p>Advance your skills with our top-level programs.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= CAMPUS ================= -->
+    <section class="campus" id="about">
+        <h1>Our Global Campus</h1>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="Images/london.jpg" alt="London Campus">
+                <div class="layer"><h3>LONDON</h3></div>
+            </div>
+
+            <div class="campus-col">
+                <img src="Images/newyork.jpg" alt="New York Campus">
+                <div class="layer"><h3>NEW YORK</h3></div>
+            </div>
+
+            <div class="campus-col">
+                <img src="Images/washington.jpg" alt="Washington Campus">
+                <div class="layer"><h3>WASHINGTON</h3></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= FACILITIES ================= -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We offer world-class facilities for our students.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="Images/library.jpg" alt="Library">
+                <h3>World Class Library</h3>
+                <p>Access thousands of books and resources in our modern library.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="Images/basketball.jpg" alt="Playground">
+                <h3>Largest Play Ground</h3>
+                <p>Sports facilities designed to support a healthy lifestyle.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="Images/cafeteria.jpg" alt="Cafeteria">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Enjoy a variety of healthy meals in our cafeteria.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="testimonials" id="blog">
+        <h1>What Our Students Say</h1>
+
+        <div class="row">
+
+            <div class="testimonial-col">
+                <img src="Images/user1.jpg" alt="Student 1">
+                <div>
+                    <p>Great experience, I learned so much!</p>
+                    <h3>Gideon Jonathan</h3>
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+
+            <div class="testimonial-col">
+                <img src="Images/user2.jpg" alt="Student 2">
+                <div>
+                    <p>The environment and teachers were amazing!</p>
+                    <h3>Samuel Jonathan</h3>
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="cta" id="contact">
+        <h1>Enroll For Our Online Courses<br>Anywhere From The World</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are dedicated to delivering quality education to students worldwide. Learn, grow, and succeed with us.</p>
+
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+
+        <p>Made with <i class="fa-solid fa-heart"></i> by Gidio</p>
+    </section>
+
+
+    <!-- ================= JS ================= -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
